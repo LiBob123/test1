@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function unique(arr) {
+        var newArr = [];
+        for (var i = 0, l = arr.length; i < l; i++) {
+            if (newArr.indexOf(arr[i]) < 0) {
+                newArr.push(arr[i]);
+            }
+        }
+        return newArr;
+    }
+
+//    function unique(arr) {
+//        var result = [], isRepeated;
+//        for (var i = 0, len = arr.length; i < len; i++) {
+//            isRepeated = false;
+//            for (var j = 0, len = result.length; j < len; j++) {
+//                if (arr[i] == result[j]) {
+//                    isRepeated = true;
+//                    break;
+//                }
+//            }
+//            if (!isRepeated) {
+//                result.push(arr[i]);
+//            }
+//        }
+//        return result;
+//    }
+</script>
+</body>
+</html>
